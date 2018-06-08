@@ -12,6 +12,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.2.6.RELEASE</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <directory>${project.basedir}/target</directory>
         <outputDirectory>${project.build.directory}/classes</outputDirectory>
@@ -22,6 +31,7 @@
     </build>
 
     <modules>
+        <module>DataBase/HBbaseSample</module>
         <module>Basic/EventProcessorSample</module>
         <module>Basic/ReceiveByDateTime</module>
         <module>Basic/ReceiveUsingOffset</module>
